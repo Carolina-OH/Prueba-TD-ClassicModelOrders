@@ -33,14 +33,16 @@
 import Jumbo from '@/components/home/Jumbo.vue'
 import cumplimientodiarioordenes from '@/components/home/cumplimientodiarioordenes.vue'
 import Ordenesatrasadasjornada from '@/components/home/ordenesatrasadasjornada.vue'
+import Ultimasordenes from '@/components/home/ultimasordenes.vue'
+import Ultimasdevoluciones from '@/components/home/ultimasdevoluciones.vue'
 export default {
   name: 'Home',
   components: {
     Jumbo,
     cumplimientodiarioordenes,
     Ordenesatrasadasjornada,
-  //  Ultimasordenes,
-   // Ultimasdevoluciones,
+    Ultimasordenes,
+    Ultimasdevoluciones,
    // NavBarAdmin,
   }
 }
