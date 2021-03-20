@@ -1,41 +1,20 @@
 <template>
-  <v-simple-table>
-    <template v-slot:default>
-      <thead>
-        <tr>
-          <th class="text-left">
-            Nombre cliente
-          </th>
-          <th class="text-left">
-            RUT
-          </th>
-          <th class="text-left">
-            Dirección entrega
-          </th>
-          <th class="text-left">
-            Contacto
-          </th>
-          <th class="text-left">
-            Fono
-          </th>
-          <th class="text-left">
-            Email
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="clientes in cliente" :key="clientes.nombre">
-          <td>{{ clientes.nombre }}</td>
-          <td>{{ clientes.rut_n }}-{{clientes.rut_dv}}</td>
-          <td>{{ clientes.direccion_entrega }}</td>
-          <td>{{ clientes.contacto }}</td>
-          <td>{{ clientes.fono }}</td>
-          <td>{{ clientes.email }}</td>
-          
-        </tr>
-      </tbody>
-    </template>
-  </v-simple-table>
+
+<div class="grilla">
+    <div class="labels">Número de orden</div>
+    <div class="labels">{{ clientes.nombre }}</div>
+    <div class="labels">Monto</div>
+    <div class="labels">{{ clientes.rut_n }}-{{clientes.rut_dv}}</div>
+    <div class="labels">Cant. Productos</div>
+    <div class="labels">{{ clientes.direccion_entrega }}</div>
+    <div class="labels">Fecha Entrega</div>
+    <div class="labels">{{ clientes.contacto }}</div>
+    <div class="labels">Vendedor</div>
+    <div class="labels">{{ clientes.fono }}</div>
+    <div class="labels">Estado</div>
+    <div class="labels">{{ clientes.email }}</div>
+  </div>
+  
 </template>
 
 <script>
@@ -60,4 +39,16 @@ export default {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+
+ .grilla{
+    display:grid;
+    grid-template-columns: .5fr 2fr;
+    margin-top:20px;
+  }
+  .labels{
+    color:rgb(71, 71, 71);
+    padding: 8px;
+    font-size: 1.1rem;
+  }
+</style>

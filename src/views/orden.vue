@@ -28,7 +28,7 @@
             <v-tab-item >
               <v-card color="basil" flat>
                 <v-card-text>
-                  <Datoscliente :cliente="clientes"></Datoscliente>
+                  <Datoscliente :clientes="datos"></Datoscliente>
                 </v-card-text>
               </v-card>
             </v-tab-item>
@@ -60,7 +60,7 @@ export default {
     return {
       tab: null,
       general:{},
-      clientes: {},
+      datos: {},
       productos:[],
     };
   },
@@ -72,7 +72,7 @@ export default {
         .then(resp=>{
           console.log(resp)
            this.general = resp.data.orden;
-           this.clientes = resp.data.cliente;
+           this.datos = resp.data.cliente;
            this.productos = resp.data.productos;
         })
         .catch(error=>{
