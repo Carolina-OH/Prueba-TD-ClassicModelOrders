@@ -6,7 +6,7 @@
 
 <script>
 
-import {mapActions} from 'vuex';
+//import {mapActions} from 'vuex';
 export default {
   name: 'App',
   // components: {
@@ -15,10 +15,10 @@ export default {
     //
   }),
   methods:{
-    ...mapActions(["getCourses"]),
+  //  ...mapActions(["getCourses"]),
   },
   created(){
-    this.getCourses();
+ //   this.getCourses();
   }
 };
 </script>

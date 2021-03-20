@@ -1,5 +1,6 @@
 <template>
-  <div >
+  <div>
+  <NavBarAdmin> </NavBarAdmin>
    <h3>home</h3>
    <v-container>
       <v-row>
@@ -35,6 +36,7 @@ import cumplimientodiarioordenes from '@/components/home/cumplimientodiarioorden
 import Ordenesatrasadasjornada from '@/components/home/ordenesatrasadasjornada.vue'
 import Ultimasordenes from '@/components/home/ultimasordenes.vue'
 import Ultimasdevoluciones from '@/components/home/ultimasdevoluciones.vue'
+import NavBarAdmin from '@/components/AdminNavbar.vue'
 export default {
   name: 'Home',
   components: {
@@ -43,7 +45,7 @@ export default {
     Ordenesatrasadasjornada,
     Ultimasordenes,
     Ultimasdevoluciones,
-   // NavBarAdmin,
+    NavBarAdmin,
   }
 }
 </script>

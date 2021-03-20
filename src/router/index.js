@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '@/views/Login.vue'
 import store from '../store'
+import Orden from '@/views/orden.vue'
+import Ordenes from '@/views/ordenes.vue'
 
 Vue.use(VueRouter)
 
@@ -15,7 +17,23 @@ const routes = [
       autenticado:true
     }
   },
-
+  {
+    path: '/Ordenes',
+    name: 'Ordenes',
+    component: Ordenes,
+    meta:{
+      autenticado:true
+    }
+  },
+  {
+    path: '/Orden/:id',
+    name: 'Orden',
+    component: Orden,
+    props:true,
+    meta:{
+      autenticado:true
+    }
+  }, 
   {
     path: '/login',
     name: "Login",
