@@ -1,17 +1,17 @@
 <template>
 
 <div class="grilla">
-    <div class="labels">Número de orden</div>
+    <div class="labels">Nombre</div>
     <div class="labels">{{ clientes.nombre }}</div>
-    <div class="labels">Monto</div>
+    <div class="labels">RUT</div>
     <div class="labels">{{ clientes.rut_n }}-{{clientes.rut_dv}}</div>
-    <div class="labels">Cant. Productos</div>
+    <div class="labels">Direccion entrega</div>
     <div class="labels">{{ clientes.direccion_entrega }}</div>
-    <div class="labels">Fecha Entrega</div>
+    <div class="labels">Contacto</div>
     <div class="labels">{{ clientes.contacto }}</div>
-    <div class="labels">Vendedor</div>
+    <div class="labels">Fono</div>
     <div class="labels">{{ clientes.fono }}</div>
-    <div class="labels">Estado</div>
+    <div class="labels">Email</div>
     <div class="labels">{{ clientes.email }}</div>
   </div>
   
