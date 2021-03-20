@@ -1,17 +1,47 @@
 <template>
-  <div class="home">
-    <CoursesGallery></CoursesGallery>
+  <div >
+   <h3>home</h3>
+   <v-container>
+      <v-row>
+        <v-col>
+          <Jumbo></Jumbo>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <cumplimientodiarioordenes></cumplimientodiarioordenes>
+        </v-col>
+        <v-col>
+          <Ordenesatrasadasjornada></Ordenesatrasadasjornada>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <Ultimasordenes></Ultimasordenes>
+        </v-col>
+        <v-col>
+          <Ultimasdevoluciones></Ultimasdevoluciones>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import CoursesGallery from "@/components/CoursesGallery.vue"
 
+import Jumbo from '@/components/home/Jumbo.vue'
+import cumplimientodiarioordenes from '@/components/home/cumplimientodiarioordenes.vue'
+import Ordenesatrasadasjornada from '@/components/home/ordenesatrasadasjornada.vue'
 export default {
   name: 'Home',
   components: {
-    CoursesGallery
+    Jumbo,
+    cumplimientodiarioordenes,
+    Ordenesatrasadasjornada,
+  //  Ultimasordenes,
+   // Ultimasdevoluciones,
+   // NavBarAdmin,
   }
 }
 </script>

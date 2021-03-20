@@ -1,0 +1,13 @@
+ [
+    {
+      "nombre": "cumplimiento diario de ordenes",
+      "entregadas": "1500",
+      "pendientes": "500"
+    },
+    {
+      "nombre": "Ordenes atrasadas jornada",
+      "totales": "700",
+      "atrasadas": "14"
+    }
+  ]
+  
