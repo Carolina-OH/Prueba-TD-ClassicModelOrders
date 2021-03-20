@@ -1,4 +1,4 @@
-# EnsayoPruebaTD
+# PruebaTD
 
 ## Project setup
 ```

@@ -25,20 +25,16 @@
 </template>
 
 <script>
-import firebase from 'firebase'
+//import firebase from 'firebase'
 export default {
   name: "Navbar-Admin",
   methods: {
     logout() {
-      firebase
-        .auth()
-        .signOut()
-        .then(()=>{
-          this.$router.push('/')
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
+     // firebase
+      
+       //   this.$router.push('/')
+        
+    
     },
   },
 };
